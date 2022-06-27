@@ -8,5 +8,5 @@ Below image shows the graphical user interface (GUI) of the Car Price Predictor
 
 The predicted price for the car Ford Endeavor 4x4 is shown below
 
-![Predicted Car Price](static/images/predicted price.PNG)
+![Predicted Car Price](static/images/predictedprice.PNG)
 
