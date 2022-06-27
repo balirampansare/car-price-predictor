@@ -10,3 +10,7 @@ The predicted price for the car Ford Endeavor 4x4 is shown below
 
 ![Predicted Car Price](static/images/predictedprice.PNG)
 
+# The flow of the Car Price Predictor
+---
+1. The data file was scraped from the (https://quikr.com)
+Link: 
