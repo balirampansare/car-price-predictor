@@ -1,11 +1,11 @@
 from flask import Flask,render_template,request,redirect
-from flask_cors import CORS,cross_origin
+#from flask_cors import CORS,cross_origin
 import pickle
 import pandas as pd
 import numpy as np
 
 app=Flask(__name__)
-cors=CORS(app)
+#cors=CORS(app)
 model=pickle.load(open('LinearRegressionModel.pkl','rb'))
 car=pd.read_csv('cleaned_car.csv')
 
@@ -21,7 +21,7 @@ def index():
 
 
 @app.route('/predict',methods=['POST'])
-@cross_origin()
+#@cross_origin()
 def predict():
 
     company = request.form.get('company')
