@@ -25,5 +25,5 @@ Link: [Cleaned Data](https://github.com/balirampansare/car-price-prediction/blob
 Link: [Car Price Predictor](https://github.com/balirampansare/car-price-prediction/blob/main/Car%20Price%20Predictor.ipynb)
 
 4. With the help of flask and we created the websiste where we used the Linear Regression model to perform predictions.
-    1. Flask File: [application] (https://github.com/balirampansare/car-price-prediction/blob/main/application.py)
-    2. HTML File: [index] (https://github.com/balirampansare/car-price-prediction/blob/main/templates/index.html)
+    1. Flask File: [application](https://github.com/balirampansare/car-price-prediction/blob/main/application.py)
+    2. HTML File: [index](https://github.com/balirampansare/car-price-prediction/blob/main/templates/index.html)
