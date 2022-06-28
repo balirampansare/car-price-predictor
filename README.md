@@ -20,6 +20,6 @@ Link: quikr_car.csv
 
 3. Then a Linear Regression model was built on top of it which had 0.88 R2_score.
 
-Link:
+Link: Car Price Predictor.ipynb
 
-4. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
+4. With the help of flask and we created the websiste where we used the Linear Regression model to perform predictions.
