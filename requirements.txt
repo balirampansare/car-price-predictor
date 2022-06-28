@@ -76,7 +76,6 @@ ply==3.11
 pooch==1.3.0
 prometheus-client==0.10.1
 prompt-toolkit==3.0.18
-PyAudio @ file:///C:/Users/ADMIN/pipwin/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 PyAutoGUI==0.9.52
 pycparser==2.20
 pygame==2.0.1
