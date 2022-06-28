@@ -14,12 +14,14 @@ The predicted price for the car Ford Endeavor 4x4 is shown below
 ---
 1. The data file was scraped from the (https://quikr.com)
 
-Link: quikr_car.csv
+Link: [quikr_car](https://github.com/balirampansare/car-price-prediction/blob/main/quikr_car.csv)
 
 2. The data was cleaned and analysed.
 
+Link: [Cleaned Data](https://github.com/balirampansare/car-price-prediction/blob/main/cleaned_car.csv)
+
 3. Then a Linear Regression model was built on top of it which had 0.88 R2_score.
 
-Link: Car Price Predictor.ipynb
+Link: [Car Price Predictor](https://github.com/balirampansare/car-price-prediction/blob/main/Car%20Price%20Predictor.ipynb)
 
 4. With the help of flask and we created the websiste where we used the Linear Regression model to perform predictions.
