@@ -71,7 +71,7 @@
       </nav>
       <hr style="height:2px;border-width:0;color:yellow;">
 
-      <form class="px-5">
+      <form class="px-5" name="myForm">
         <div class="pt-3 fs-1 text-light text-center">
           <span> Car Price Predictor</span>
         </div>
@@ -116,7 +116,7 @@
 
         <div class="text-center fs-4 py-3 ">
           <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-            onclick="send_data()">Predict Price</button>
+            onclick="send_data1()">Predict Price</button>
         </div>
 
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -168,6 +168,34 @@
     function form_handler(event) {
       event.preventDefault(); // Don't submit the form normally
     }
+
+    function send_data1(){
+       x = document.forms["myForm"]["company"].value;
+       y = document.forms["myForm"]["car_models"].value;
+       z = document.forms["myForm"]["year"].value;
+       m = document.forms["myForm"]["fuel_type"].value;
+       n = document.forms["myForm"]["kilo_driven"].value;
+  if (n=="") {
+    document.getElementById('prediction').innerHTML = "Oops something you missed in form";
+  }
+  else{
+    send_data()}
+  /*else if (y == "") {
+    document.getElementById('prediction').innerHTML = "please select the car model";
+  }
+  else if (z == "") {
+    document.getElementById('prediction').innerHTML = "please select the year";
+  }
+  else if (m == "") {
+    document.getElementById('prediction').innerHTML = "please select the fuel type";
+  }
+  else if (n == "") {
+    document.getElementById('prediction').innerHTML = "Please enter the kilometer driven";
+  }*/
+  
+
+    }
+
     function send_data() {
       document.querySelector('form').addEventListener("submit", form_handler);
 
