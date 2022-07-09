@@ -111,7 +111,7 @@
         <div class="form-group mt-3">
           <label class="text-light fs-4">Enter km driven by car:</label>
           <input type="text" class="form-control" id="kilo_driven" name="kilo_driven"
-            placeholder="Enter the kilometres driven ">
+            placeholder="Enter the kilometres driven " required="1">
         </div>
 
         <div class="text-center fs-4 py-3 ">
@@ -175,25 +175,23 @@
        z = document.forms["myForm"]["year"].value;
        m = document.forms["myForm"]["fuel_type"].value;
        n = document.forms["myForm"]["kilo_driven"].value;
-  if (n=="") {
-    document.getElementById('prediction').innerHTML = "Oops something you missed in form";
+  if (x=="") {
+    document.getElementById('prediction').innerHTML = "Please select the car company";
   }
-  else{
-    send_data()}
-  /*else if (y == "") {
-    document.getElementById('prediction').innerHTML = "please select the car model";
+  else if (y == "") {
+    document.getElementById('prediction').innerHTML = "Please select the car model";
   }
   else if (z == "") {
-    document.getElementById('prediction').innerHTML = "please select the year";
+    document.getElementById('prediction').innerHTML = "Please select the year";
   }
   else if (m == "") {
-    document.getElementById('prediction').innerHTML = "please select the fuel type";
+    document.getElementById('prediction').innerHTML = "Please select the fuel type";
   }
   else if (n == "") {
     document.getElementById('prediction').innerHTML = "Please enter the kilometer driven";
-  }*/
-  
-
+  }
+  else{
+    send_data()}
     }
 
     function send_data() {
