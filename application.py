@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
+#creating object/constructor of flask where we pass __name__ as argument
 app=Flask(__name__)
 model=pickle.load(open('LinearRegressionModel.pkl','rb'))
 car=pd.read_csv('cleaned_car.csv')
@@ -20,8 +21,8 @@ def index():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-
-    company = request.form.get('company')
+    """ what ever data is filled in form, extracting that data """
+    company = request.form.get('company') #here company means the name we had entered in the form, similar to below code
     car_model = request.form.get('car_models')
     year = request.form.get('year')
     fuel_type = request.form.get('fuel_type')

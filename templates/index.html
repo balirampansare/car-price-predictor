@@ -79,6 +79,7 @@
           <label class="text-light fs-4">Select the Company:</label>
           <select class="selectpicker form-control" id="company" name="company" required="1"
             onchange="load_car_models(this.id,'car_models')">
+            <!-- in order to access the companies we are going to use jinja 2 template -->>
             {% for company in companies %}
             <option value="{{ company }}">{{ company }}</option>
             {% endfor %}
@@ -146,7 +147,7 @@
     function load_car_models(company_id, car_model_id) {
       var company = document.getElementById(company_id);
       var car_model = document.getElementById(car_model_id);
-      console.log(company.value);
+      console.log(company.value); /*we will get the value whathever is selected by the user. so basically this is how we are going to access company value*/ 
       car_model.value = "";
       car_model.innerHTML = "";
       {% for company in companies %}
@@ -164,6 +165,7 @@
       }
       {% endfor %}
     }
+    //so on click of submit, instead of submitting i want to pass it to another method and it will predict ther.
 
     function form_handler(event) {
       event.preventDefault(); // Don't submit the form normally
@@ -197,6 +199,7 @@
     function send_data() {
       document.querySelector('form').addEventListener("submit", form_handler);
 
+      /* so we will get all the data of the form in fd */
       var fd = new FormData(document.querySelector('form'));
 
       var xhr = new XMLHttpRequest({ mozSystem: true });
@@ -206,7 +209,6 @@
       xhr.onreadystatechange = function () {
         if (xhr.readyState == XMLHttpRequest.DONE) {
           document.getElementById('prediction').innerHTML = "Prediction: ₹" + xhr.responseText;
-
         }
       };
 
