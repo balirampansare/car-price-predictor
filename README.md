@@ -23,7 +23,7 @@ Link: [Cleaned Dataset](https://github.com/balirampansare/car-price-prediction/b
 
 3. Then a Linear Regression model was built on top of it which had 0.88 R2_score.
 
-Link: [Car Price Predictor](https://github.com/balirampansare/car-price-prediction/blob/main/Car%20Price%20Predictor.ipynb)
+Link: [Car Price Predictor]([https://github.com/balirampansare/car-price-prediction/blob/main/Car%20Price%20Predictor.ipynb](https://github.com/balirampansare/car-price-predictor/blob/main/Car%20Price%20Prediction%20With%20GUI.ipynb))
 
 4. Website is created using Flask and the implementation of Linear Regression to predict the price of the car.
     1. Flask File: [application](https://github.com/balirampansare/car-price-prediction/blob/main/application.py)
