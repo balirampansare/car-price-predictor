@@ -203,7 +203,8 @@
       var fd = new FormData(document.querySelector('form'));
 
       var xhr = new XMLHttpRequest({ mozSystem: true });
-
+      
+      /*so on button click it will run open  */
       xhr.open('POST', '/predict', true);
       document.getElementById('prediction').innerHTML = "Wait! Predicting Price.....";
       xhr.onreadystatechange = function () {
@@ -213,7 +214,8 @@
       };
 
       xhr.onload = function () { };
-
+      
+      /*sending our data. i.e form data stored in fd  */
       xhr.send(fd);
     }
   </script>
