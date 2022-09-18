@@ -157,7 +157,7 @@
 
         var newOption = document.createElement("option");
         newOption.value = "{{ model }}";
-        newOption.innerHTML = "{{ model }}";
+        newOption.innerHTML = "{{ model }}"; /* set or return the html cotent of an html element*/
         car_model.options.add(newOption);
 
         {% endif %}
@@ -172,13 +172,13 @@
     }
 
     function send_data1(){
-       x = document.forms["myForm"]["company"].value;
+       x = document.forms["myForm"]["company"].value; /*storing the input values*/
        y = document.forms["myForm"]["car_models"].value;
        z = document.forms["myForm"]["year"].value;
        m = document.forms["myForm"]["fuel_type"].value;
        n = document.forms["myForm"]["kilo_driven"].value;
   if (x=="") {
-    document.getElementById('prediction').innerHTML = "Please select the car company";
+    document.getElementById('prediction').innerHTML = "Please select the car company"; /*prediction is the modal id where we are going to return the value*/
   }
   else if (y == "") {
     document.getElementById('prediction').innerHTML = "Please select the car model";
@@ -190,22 +190,22 @@
     document.getElementById('prediction').innerHTML = "Please select the fuel type";
   }
   else if (n == "") {
-    document.getElementById('prediction').innerHTML = "Please enter the kilometer driven";
+    document.getElementById('prediction').innerHTML = "Please enter the kilometer driven"; /*innerhtml set the text for the HTML element*/
   }
   else{
     send_data()}
     }
 
     function send_data() {
-      document.querySelector('form').addEventListener("submit", form_handler);
+      document.querySelector('form').addEventListener("submit", form_handler); /*event listner wait for submit action*/
 
       /* so we will get all the data of the form in fd */
       var fd = new FormData(document.querySelector('form'));
 
-      var xhr = new XMLHttpRequest({ mozSystem: true });
+      var xhr = new XMLHttpRequest({ mozSystem: true }); /*using XMLHttpRequest to interact with the server*/
       
       /*so on button click it will run open  */
-      xhr.open('POST', '/predict', true);
+      xhr.open('POST', '/predict', true); /*so it will run the predict routing*/
       document.getElementById('prediction').innerHTML = "Wait! Predicting Price.....";
       xhr.onreadystatechange = function () {
         if (xhr.readyState == XMLHttpRequest.DONE) {
@@ -213,10 +213,10 @@
         }
       };
 
-      xhr.onload = function () { };
+      xhr.onload = function () { }; /*The purpose of this attribute is to execute a script when the associated element loads. */
       
       /*sending our data. i.e form data stored in fd  */
-      xhr.send(fd);
+      xhr.send(fd); /*sending data to the server*/
     }
   </script>
 
