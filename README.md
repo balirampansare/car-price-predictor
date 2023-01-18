@@ -1,4 +1,10 @@
-# Car Price Predictor
+<h1 align="center">Car Price Predictor</h1>
+<p align="center">
+<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
+<img src="https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white" />
+</p>
+
+
 Project Link: [Car-Price-Predictor](https://car-price-predictor-ml.herokuapp.com/)
 1. Car Price Predictor takes the parameters of an used car: Company name, Model name, Year of Purchase, Fuel Type and Number of Kilometers it has been driven.
 2. It then predicts the possible price of the car with the help of linear regression.
