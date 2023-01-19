@@ -36,4 +36,4 @@ Link: [Car Price Predictor](https://github.com/balirampansare/car-price-predicto
 
 4. Website is created using Flask and the implementation of Linear Regression to predict the price of the car.
     1. Flask File: [application](https://github.com/balirampansare/car-price-prediction/blob/main/application.py)
-    2. HTML File: [index](https://github.com/balirampansare/car-price-prediction/blob/main/templates/index.html)
+    2. GUI (HTML File): [index](https://github.com/balirampansare/car-price-prediction/blob/main/templates/index.html)
